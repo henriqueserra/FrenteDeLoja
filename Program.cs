@@ -1,22 +1,37 @@
-﻿using System;
+﻿using FrenteDeLoja_V001.Bibliotecas;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
-namespace FrenteDeLoja
+namespace FrenteDeLoja_V001
     {
-    static class Program
+    internal class Program
         {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
+        private static void Main(string[] args)
             {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Arquivos arquivos = new Arquivos();
+            arquivos.Diretorioorigem=@"E:\Balde\";
+            //arquivos.Extensaoarquivos=".xml";
+            arquivos.Tentativasleitura=1000;
+
+            var diretorios = arquivos.ListarArquivos(".xml");
+
+            foreach (var item in diretorios)
+                {
+                Console.WriteLine(item);
+                }
+
+            //var resultado = arquivos.TestarArquivo("AD35190432538916000196590006371110000133339717");
+
+            //var arquivoxml = arquivos.CarregaArquivo("AD35190432538916000196590006371110000133339717");
+            //foreach (var linha in arquivoxml)
+            //    {
+            //    Console.WriteLine(linha);
+            //    }
+
+            Console.ReadLine();
             }
         }
     }

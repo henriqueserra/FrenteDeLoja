@@ -1,0 +1,6 @@
+C:\Users\Henrique\source\repos\FrenteDeLoja_V001\bin\Debug\FrenteDeLoja_V001.exe.config
+C:\Users\Henrique\source\repos\FrenteDeLoja_V001\bin\Debug\FrenteDeLoja_V001.exe
+C:\Users\Henrique\source\repos\FrenteDeLoja_V001\bin\Debug\FrenteDeLoja_V001.pdb
+C:\Users\Henrique\source\repos\FrenteDeLoja_V001\obj\Debug\FrenteDeLoja_V001.csprojAssemblyReference.cache
+C:\Users\Henrique\source\repos\FrenteDeLoja_V001\obj\Debug\FrenteDeLoja_V001.exe
+C:\Users\Henrique\source\repos\FrenteDeLoja_V001\obj\Debug\FrenteDeLoja_V001.pdb
