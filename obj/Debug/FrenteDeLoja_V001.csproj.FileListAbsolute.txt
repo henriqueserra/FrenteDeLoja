@@ -4,3 +4,14 @@ C:\Users\Henrique\source\repos\FrenteDeLoja_V001\bin\Debug\FrenteDeLoja_V001.pdb
 C:\Users\Henrique\source\repos\FrenteDeLoja_V001\obj\Debug\FrenteDeLoja_V001.csprojAssemblyReference.cache
 C:\Users\Henrique\source\repos\FrenteDeLoja_V001\obj\Debug\FrenteDeLoja_V001.exe
 C:\Users\Henrique\source\repos\FrenteDeLoja_V001\obj\Debug\FrenteDeLoja_V001.pdb
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\bin\Debug\FrenteDeLoja_V001.exe.config
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\bin\Debug\FrenteDeLoja_V001.exe
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\bin\Debug\FrenteDeLoja_V001.pdb
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\bin\Debug\ModelosXml.dll
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\bin\Debug\ModelosXml.pdb
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\obj\Debug\FrenteDeLoja_V001.csprojAssemblyReference.cache
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\obj\Debug\FrenteDeLoja_V001.csproj.CopyComplete
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\obj\Debug\FrenteDeLoja_V001.exe
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\obj\Debug\FrenteDeLoja_V001.pdb
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\bin\Debug\Library.dll
+D:\OneDrive\Pessoal\Repositorio_Git_Hub\FrenteDeLoja\bin\Debug\Library.pdb

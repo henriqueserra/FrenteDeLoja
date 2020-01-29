@@ -1,35 +1,44 @@
-﻿using FrenteDeLoja_V001.Bibliotecas;
+﻿using Library;
+using ModelosXml;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FrenteDeLoja_V001
     {
     internal class Program
         {
-        private static void Main(string[] args)
+        private static void Main()
             {
-            Arquivos arquivos = new Arquivos();
-            arquivos.Diretorioorigem=@"E:\Balde\";
-            //arquivos.Extensaoarquivos=".xml";
-            arquivos.Tentativasleitura=1000;
-
-            var diretorios = arquivos.ListarArquivos(".xml");
-
-            foreach (var item in diretorios)
+            var listadearquivos = Library.NfeDadosBasicos.CarregaListaArquivos(@"E:\Balde\");
+            foreach (var arquivo in listadearquivos)
                 {
-                Console.WriteLine(item);
+                if (!Library.NfeDadosBasicos.PodeSerLido(arquivo))
+                    {
+                    Console.WriteLine("Aqruivo {0}, não pode ser lido ", arquivo);
+                    }
+                ModelosXml.NfeDadosBasicos nota = new ModelosXml.NfeDadosBasicos(arquivo);
+                if (nota.CarregaDados())
+                    {
+                    Console.WriteLine("Lida nota : {0}", nota.NCFe);
+                    if (!Library.NfeDadosBasicos.TestaDB(nota.NCFe))
+                        {
+                        Console.WriteLine("A nota {0}, pode ser incluída na base {1}", nota.NCFe, nota.Data);
+                        string comandoparainclusao = ModelosXml.NfeDadosBasicos.GeraComandoInclusao(nota);
+                        if (Library.NfeDadosBasicos.ExecutaSql(comandoparainclusao))
+                            {
+                            Console.WriteLine("Nota incluida com sucesso");
+                            }
+                        }
+                    else
+                        {
+                        Console.WriteLine("A nota {0}, já esta no Banco de dados e não será processada", nota.NCFe);
+                        }
+                    }
+                else
+                    {
+                    Console.WriteLine("Item {0} não foi processado ", nota.NCFe);
+                    Console.ReadLine();
+                    }
                 }
-
-            //var resultado = arquivos.TestarArquivo("AD35190432538916000196590006371110000133339717");
-
-            //var arquivoxml = arquivos.CarregaArquivo("AD35190432538916000196590006371110000133339717");
-            //foreach (var linha in arquivoxml)
-            //    {
-            //    Console.WriteLine(linha);
-            //    }
 
             Console.ReadLine();
             }
