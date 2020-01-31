@@ -8,7 +8,7 @@ namespace FrenteDeLoja_V001
         {
         private static void Main()
             {
-            var listadearquivos = Library.NfeDadosBasicos.CarregaListaArquivos(@"E:\Balde\");
+            var listadearquivos = Library.NfeDadosBasicos.CarregaListaArquivos(@"E:\Balde3\");
             foreach (var arquivo in listadearquivos)
                 {
                 if (!Library.NfeDadosBasicos.PodeSerLido(arquivo))
